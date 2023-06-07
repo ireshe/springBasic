@@ -1,26 +1,19 @@
-package xyz.qualon.pos.pos.dto;
-import java.util.ArrayList;
+package xyz.qualon.pos.pos.dto.request;
 
-public class CustomerDTO {
+public class CustomerUpdateDTO {
     private int customerId;
     private String customerName;
     private String customerAddress;
-    private ArrayList customerNumber;
-    private String nic;
     private double customerSalary;
-    private boolean isActive;
 
-    public CustomerDTO() {
+    public CustomerUpdateDTO() {
     }
 
-    public CustomerDTO(int customerId, String customerName, String customerAddress, ArrayList customerNumber, String nic, double customerSalary, boolean isActive) {
+    public CustomerUpdateDTO(int customerId, String customerName, String customerAddress, double customerSalary) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.customerAddress = customerAddress;
-        this.customerNumber = customerNumber;
-        this.nic = nic;
         this.customerSalary = customerSalary;
-        this.isActive = isActive;
     }
 
     public int getCustomerId() {
@@ -47,22 +40,6 @@ public class CustomerDTO {
         this.customerAddress = customerAddress;
     }
 
-    public ArrayList getCustomerNumber() {
-        return customerNumber;
-    }
-
-    public void setCustomerNumber(ArrayList customerNumber) {
-        this.customerNumber = customerNumber;
-    }
-
-    public String getNic() {
-        return nic;
-    }
-
-    public void setNic(String nic) {
-        this.nic = nic;
-    }
-
     public double getCustomerSalary() {
         return customerSalary;
     }
@@ -71,24 +48,13 @@ public class CustomerDTO {
         this.customerSalary = customerSalary;
     }
 
-    public boolean isActive() {
-        return isActive;
-    }
-
-    public void setActive(boolean active) {
-        isActive = active;
-    }
-
     @Override
     public String toString() {
-        return "CustomerDTO{" +
+        return "CustomerUpdateDTO{" +
                 "customerId=" + customerId +
                 ", customerName='" + customerName + '\'' +
                 ", customerAddress='" + customerAddress + '\'' +
-                ", customerNumber=" + customerNumber +
-                ", nic='" + nic + '\'' +
                 ", customerSalary=" + customerSalary +
-                ", isActive=" + isActive +
                 '}';
     }
 }

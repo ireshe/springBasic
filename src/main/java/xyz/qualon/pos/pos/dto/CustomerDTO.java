@@ -1,4 +1,5 @@
 package xyz.qualon.pos.pos.dto;
+
 import java.util.ArrayList;
 
 public class CustomerDTO {
@@ -81,14 +82,6 @@ public class CustomerDTO {
 
     @Override
     public String toString() {
-        return "CustomerDTO{" +
-                "customerId=" + customerId +
-                ", customerName='" + customerName + '\'' +
-                ", customerAddress='" + customerAddress + '\'' +
-                ", customerNumber=" + customerNumber +
-                ", nic='" + nic + '\'' +
-                ", customerSalary=" + customerSalary +
-                ", isActive=" + isActive +
-                '}';
+        return "CustomerDTO{" + "customerId=" + customerId + ", customerName='" + customerName + '\'' + ", customerAddress='" + customerAddress + '\'' + ", customerNumber=" + customerNumber + ", nic='" + nic + '\'' + ", customerSalary=" + customerSalary + ", isActive=" + isActive + '}';
     }
 }

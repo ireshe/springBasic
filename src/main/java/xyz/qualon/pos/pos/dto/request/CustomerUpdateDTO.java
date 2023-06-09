@@ -50,11 +50,6 @@ public class CustomerUpdateDTO {
 
     @Override
     public String toString() {
-        return "CustomerUpdateDTO{" +
-                "customerId=" + customerId +
-                ", customerName='" + customerName + '\'' +
-                ", customerAddress='" + customerAddress + '\'' +
-                ", customerSalary=" + customerSalary +
-                '}';
+        return "CustomerUpdateDTO{" + "customerId=" + customerId + ", customerName='" + customerName + '\'' + ", customerAddress='" + customerAddress + '\'' + ", customerSalary=" + customerSalary + '}';
     }
 }
